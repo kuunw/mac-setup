@@ -14,7 +14,7 @@ echo "- raycast
 - visual-studio-code
 - anaconda" 
 read confirm
-if [[$confirm =~ [yY](es)*]]
+if [[ $confirm =~ [yY](es)* ]]
 then
     {brew install --cask raycast visual-studio-code anaconda} || echo "There is a problem with the installation, please verify manually." ## anaconda not added to path
 fi
