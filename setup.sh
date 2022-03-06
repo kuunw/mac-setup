@@ -10,9 +10,11 @@ clear
 # Install SP1
 echo "Do you want to install Development Pack? [Y?]"
 echo "Following packages are included:\n"
-echo "raycast\tvisual-studio-code\tanaconda" 
+echo "- raycast
+- visual-studio-code
+- anaconda" 
 read confirm
-if ["$confirm" == [yY]]
+if [[$confirm =~ [yY](es)*]]
 then
     {brew install --cask raycast visual-studio-code anaconda} || echo "There is a problem with the installation, please verify manually." ## anaconda not added to path
 fi
