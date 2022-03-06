@@ -9,10 +9,8 @@ clear
 
 # Install SP1
 echo "Do you want to install Development Pack? [Y?]"
-echo "Following packages are included:\n"
-echo "- raycast
-- visual-studio-code
-- anaconda" 
+echo "Following packages are included:"
+echo "- raycast\n- visual-studio-code\n- anaconda" 
 read confirm
 if [[ $confirm =~ [yY](es)* ]]
 then
