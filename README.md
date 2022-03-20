@@ -42,7 +42,7 @@ And I use **Anaconda** to manage Python environment and packages, Anaconda can b
 
 After Ananconda installed, where we open the terminal, we can normally see the `(base)` before the prompt. That means `(base)` enviroment is automatically activated at the openning of the terminal. Here, I don't use `(base)` as my development environment since Python 3.9 has a compatibility issue with **pulp**, the package for linear programming that I use the most.
 
-So the first thing I want to do is to create a new environment called `(pulp)` with has Python version 3.8. It can be done using this command line:
+So the first thing I want to do is to create a new environment called `(pulp)` with Python version 3.8. It can be done using this command line:
 
 ```
 conda create -n pulp python=3.8
